@@ -1,0 +1,49 @@
+.containerNativo{
+    background-color: #03A64A;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerDosElementos{
+    width: 30vw;
+    height: 50vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10vh;
+}
+
+.logo{
+    width: 10vw;
+    margin: 50px 0 15px 0;
+}
+
+.resultado{
+    color: #03A64A;
+    font-size: 25px;
+}
+
+.btn {
+    font-size: 25px;
+    background-color: #03A64A;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.horario{
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
