@@ -1,26 +1,32 @@
+import { useState } from 'react'
+
 export default function Main(){
-    
-    let armazenarResultado = []
 
-    function gerarNumeros(){
+        let armazenarNumeros = []
 
-        let novoNumero = Math.ceil((Math.random()) * 60)
+        const [mostrarResultado, setMostrarResultado] = useState()
+
+        function gerarNumeros(){
+
+            let numeroGerado = Math.ceil((Math.random()) * 60)
     
-        if(armazenarResultado.includes(novoNumero) === false && armazenarResultado.length < 6 ){
-            armazenarResultado.push(novoNumero)
-            gerarNumeros()
-        } else if(armazenarResultado.includes(novoNumero) === true && armazenarResultado.length < 6){
-            gerarNumeros()
-        } else{
-            console.log('Fim da criação de números')
+            if(armazenarNumeros.includes(numeroGerado) === false && armazenarNumeros.length < 6 ){
+                armazenarNumeros.push(numeroGerado)
+                gerarNumeros()
+
+            } else if(armazenarNumeros.includes(numeroGerado) === true && armazenarNumeros.length < 6){
+                gerarNumeros()
+
+            } else{
+                setMostrarResultado(armazenarNumeros.sort((a, b) => a - b).join(', '))
+            }       
         } 
-    }
-    //gerarNumeros()
+
     return(
         <>
           <h1>Números gerados: </h1>
-          {armazenarResultado.sort((a, b) => a - b).join(', ')}
-          <button onClick={gerarNumeros}>Gerar números</button>
+          <h3>{mostrarResultado}</h3>
+          <button className="btn" onClick={gerarNumeros}>Gerar números</button>
         </>
     )
-}
+}    
