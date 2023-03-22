@@ -1,27 +1,26 @@
 export default function Main(){
     
-    let numbers = []
+    let armazenarResultado = []
 
-    let steps = () =>{
+    function gerarNumeros(){
 
-        let newNumber = Math.ceil((Math.random()) * 60)
+        let novoNumero = Math.ceil((Math.random()) * 60)
     
-        if(numbers.includes(newNumber) === false && numbers.length < 6 ){
-            numbers.push(newNumber)
-            steps()
-        } else if(numbers.includes(newNumber) === true && numbers.length < 6){
-            steps()
+        if(armazenarResultado.includes(novoNumero) === false && armazenarResultado.length < 6 ){
+            armazenarResultado.push(novoNumero)
+            gerarNumeros()
+        } else if(armazenarResultado.includes(novoNumero) === true && armazenarResultado.length < 6){
+            gerarNumeros()
         } else{
-            console.log('Fim da criação de números') 
-            console.log(numbers.sort((a, b) => a - b).join(', '))
+            console.log('Fim da criação de números')
         } 
     }
-
-    steps()
-    
+    //gerarNumeros()
     return(
         <>
-        {numbers.join(', ')}
+          <h1>Números gerados: </h1>
+          {armazenarResultado.sort((a, b) => a - b).join(', ')}
+          <button onClick={gerarNumeros}>Gerar números</button>
         </>
     )
 }
