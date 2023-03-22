@@ -4,7 +4,7 @@ export default function Main(){
 
     let steps = () =>{
 
-        let newNumber = Math.floor((Math.random())*61)
+        let newNumber = Math.ceil((Math.random()) * 60)
     
         if(numbers.includes(newNumber) === false && numbers.length < 6 ){
             numbers.push(newNumber)
