@@ -13,7 +13,7 @@ export default function Main(){
             steps()
         } else{
             console.log('Fim da criação de números') 
-            console.log(numbers.join(', '))
+            console.log(numbers.sort((a, b) => a - b).join(', '))
         } 
     }
 
