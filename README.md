@@ -30,6 +30,7 @@
 <h2>Implementações futuras</h2>
 
 <ul>
+    <li>Implementação de um plano de fundo para melhorar a aparência</li>
     <li>Estilização em como o resultado será mostrado</li>
     <li>Revisão da responsividade considerando a altura do dispositivo do usuário</li>
 </ul>
