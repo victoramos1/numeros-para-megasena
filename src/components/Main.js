@@ -27,7 +27,7 @@ export default function Main(){
 
             } else{
                 setMostrarResultado(armazenarNumeros.sort((a, b) => a - b).join(' - '))
-                setMostrarHorario(`${data.getHours()}:${ajusteMinutos()}`) 
+                setMostrarHorario(`${data.getHours()}:${ajusteMinutos()}`)
             }   
         } 
 
