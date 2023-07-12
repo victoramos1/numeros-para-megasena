@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/numeros-para-megasena/static/css/main.1931a62d.css",
+    "main.js": "/numeros-para-megasena/static/js/main.ccfdfe0e.js",
+    "static/media/bg.svg": "/numeros-para-megasena/static/media/bg.efb101b74bbf1ae9bcc7.svg",
+    "index.html": "/numeros-para-megasena/index.html",
+    "main.1931a62d.css.map": "/numeros-para-megasena/static/css/main.1931a62d.css.map",
+    "main.ccfdfe0e.js.map": "/numeros-para-megasena/static/js/main.ccfdfe0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1931a62d.css",
+    "static/js/main.ccfdfe0e.js"
+  ]
+}
